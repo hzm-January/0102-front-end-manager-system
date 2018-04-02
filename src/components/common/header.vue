@@ -4,7 +4,7 @@
             <!--Logo area-->
             <el-col :xs="12" :sm="12" :md="4">
                 <div class="logo">  
-                    <span class="logo_prefix">JSPang</span><span class="logo_suffix">Admin</span>
+                    <span class="logo_prefix">houzm</span><span class="logo_suffix">Admin</span>
                 </div>
             </el-col>
 
@@ -22,7 +22,7 @@
             <el-col :xs="24" :sm="12" :md="4">
                 <div class="website">
                     <span>Website:</span>
-                    <span>www.jspang.com</span>
+                    <span>www.houzm.com</span>
                 </div>
             </el-col>
  
@@ -73,15 +73,14 @@
                                 <el-dropdown-item v-for="task in tasks" :key="task.id" divided>
                                     <div class="task-div">
                                         <span class="task-span task-tag">
-                                        <el-tag type="danger" v-if="task.rank==1">紧急</el-tag>
-                                        <el-tag type="warning" v-if="task.rank==2">重要</el-tag>
-                                        <el-tag type="success" v-if="task.rank==3">正常</el-tag>
+                                            <el-tag type="danger" v-if="task.rank==1">紧急</el-tag>
+                                            <el-tag type="warning" v-if="task.rank==2">重要</el-tag>
+                                            <el-tag type="success" v-if="task.rank==3">正常</el-tag>
                                         </span>
                                         <span class="task-span task-content">
-                                        {{task.content}}<br/>
-                                        <span class="task-time">截止：{{task.overTime}}</span>
+                                            {{task.content}}<br/>
+                                            <span class="task-time">截止：{{task.overTime}}</span>
                                         </span>
-                                        
                                         <span class="task-span task-btn"><el-button type="primary" size="mini">完成</el-button></span>
                                     </div>
                                 </el-dropdown-item>
@@ -89,10 +88,7 @@
                             </el-dropdown-menu>
                         </el-dropdown>
                      </el-col>   
-
-
                 </div>
-            
          </el-col>
 
 
@@ -112,35 +108,19 @@
                                 <span class="setting-icon"><i class="material-icons">settings</i></span> 
                                 <span class="setting-string"> Settings  设置</span>
                             </div>
-                         
                         </el-dropdown-item>
                         <el-dropdown-item divided>
                             <div class="setting-div">
                                 <span class="setting-icon"><i class="material-icons">assignment_return</i></span> 
                                 <span class="setting-string"> Sign out  退出</span>
                             </div>
-                            
                         </el-dropdown-item>
-                        
                     </el-dropdown-menu>
                 </el-dropdown>
-
-
             </div>
-
-
          </el-col>
         </el-row>
-
-
-      
-
-
     </div>
-    
-
-
-
 </template>
 
 <script>

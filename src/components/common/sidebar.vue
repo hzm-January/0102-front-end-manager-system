@@ -9,16 +9,12 @@
 
             <el-submenu index="2">
                 <template slot="title">
-               
                     <span class="sb-icon"><i class="material-icons">perm_data_setting</i></span>
                     <span class="sb-cn">Components</span>
-                 
                 </template>
                 <el-menu-item index="EditorPage">Editor</el-menu-item>
                 <el-menu-item index="MarkdownPage">Markdown</el-menu-item>
                 <el-menu-item index="TodoList">TodoList</el-menu-item>
-                     
-                
             </el-submenu>
 
             <el-submenu index="3">
@@ -44,14 +40,16 @@
                     <span class="sb-cn">Tables</span>
                 </template>
                 <el-menu-item index="BasicTables"> Basic Tables</el-menu-item>
-                
             </el-submenu>
-
-
- 
-
- 
             
+            <el-submenu index="6">
+                <template slot="title">
+                    <span class="sb-icon"><i class="material-icons">border_all</i></span>
+                    <span class="sb-cn">商品管理</span>
+                </template>
+                <el-menu-item index="ManCloth"> 服装</el-menu-item>
+                <el-menu-item index="manWatch"> watch</el-menu-item>
+            </el-submenu>
         </el-menu>
     </div>
 </template>

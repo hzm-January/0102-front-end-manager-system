@@ -9,6 +9,7 @@ import BasicTables from '@/components/page/BasicTables';
 import EditorPage from '@/components/page/EditorPage';
 import MarkdownPage from '@/components/page/MarkdownPage';
 import TodoList from '@/components/page/TodoListPage';
+import ManCloth from '@/components/page/ManCloth';
 
 Vue.use(Router)
 
@@ -47,6 +48,9 @@ export default new Router({
         },{
           path:'/TodoList',
           component:TodoList
+        },{
+          path:'/ManCloth',
+          component:ManCloth
         }
         
 
